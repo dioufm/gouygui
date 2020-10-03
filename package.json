@@ -4,6 +4,7 @@
   "scripts": {
     "prestart": "ng build --prod && ngc",
     "start": "ts-node src/server.ts",
+    "heroku-postbuild": "ng build --prod",
     "ng": "ng",
     "build": "ng build",
     "test": "ng test",
@@ -24,7 +25,6 @@
     "@angular/platform-server": "^10.1.3",
     "@angular/router": "~10.1.3",
     "express": "^4.17.1",
-    "hammerjs": "^2.0.8",
     "rxjs": "~6.6.0",
     "tslib": "^2.0.0",
     "zone.js": "~0.10.2"
@@ -33,7 +33,6 @@
     "@angular-devkit/build-angular": "~0.1001.3",
     "@angular/cli": "~10.1.3",
     "@angular/compiler-cli": "~10.1.3",
-    "@types/hammerjs": "^2.0.36",
     "@types/jasmine": "~3.5.0",
     "@types/jasminewd2": "~2.0.3",
     "@types/node": "^12.11.1",
