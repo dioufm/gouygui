@@ -2,7 +2,7 @@
   "name": "gouygui",
   "version": "0.0.0",
   "scripts": {
-    "prestart": "ng build --prod && ngc",
+    "prestart": "ng build --prod",
     "start": "ts-node src/server.ts",
     "heroku-postbuild": "ng build --prod",
     "ng": "ng",
