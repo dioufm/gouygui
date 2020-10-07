@@ -3,7 +3,7 @@
   "version": "0.0.0",
   "scripts": {
     "prestart": "ng build --prod",
-    "start": "ts-node src/server.ts",
+    "start": "node server.ts",
     "heroku-postbuild": "ng build --prod",
     "ng": "ng",
     "build": "ng build",
