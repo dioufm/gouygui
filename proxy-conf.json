@@ -1,0 +1,6 @@
+{
+  "/api": {
+    "target": "https://gouygui.herokuapp.com:8080",
+    "secure": false
+  }
+}
