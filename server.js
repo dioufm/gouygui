@@ -21,13 +21,12 @@ app.use(bodyParser.urlencoded({ extended: true }));
 
 app.use(express.static("./dist/gouygui"));
 
-/*
 app.get("/*", (req, res) =>
   res.sendFile("index.html", { root: "dist/gouygui/" })
 );
-*/
-app.get("/", (req, res) => {
-  res.json({ message: "Welcome to bezkoder application." });
-});
+
+// app.get("/", (req, res) => {
+//   res.json({ message: "Welcome to bezkoder application." });
+// });
 
 app.listen(process.env.PORT || 8080);
