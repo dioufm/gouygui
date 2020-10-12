@@ -7,7 +7,7 @@ const fs = require("fs");
 const app = express();
 
 var corsOptions = {
-  // origin: "http://172.30.218.52:8080",
+  //origin: "http://172.30.218.52:8080",
   origin: "https://gouygui.herokuapp.com:8080",
 };
 
