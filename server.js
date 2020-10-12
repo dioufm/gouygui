@@ -21,8 +21,10 @@ app.use(bodyParser.urlencoded({ extended: true }));
 
 app.use(express.static("./dist/gouygui"));
 
-app.get("/*", (req, res) =>
-  res.sendFile("index.html", { root: "dist/gouygui/" })
-);
+app.route("/api/cats").get((req, res) => {
+  res.send({
+    cats: [{ name: "lilly" }, { name: "lucy" }],
+  });
+});
 
 app.listen(process.env.PORT || 8080);
